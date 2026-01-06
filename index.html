@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestão de Tarefas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciador de Tarefas</h1>
+  </header>
+  <main>
+    <section id="formulario">
+      <form id="form-tarefa">
+        <label for="nome-tarefa">Nome da Tarefa:</label>
+        <input type="text" id="nome-tarefa" placeholder="Digite a tarefa" required>
+        <label for="prioridade">Prioridade:</label>
+        <select id="prioridade">
+          <option value="baixa">Baixa</option>
+          <option value="media">Média</option>
+          <option value="alta">Alta</option>
+        </select>
+        <button type="submit">Adicionar Tarefa</button>
+      </form>
+    </section>
+    <section id="filtro">
+      <label for="filtro-prioridade">Filtrar por prioridade:</label>
+      <select id="filtro-prioridade">
+        <option value="todas">Todas</option>
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+    </section>
+    <section id="lista-tarefas">
+      <h2>Lista de Tarefas</h2>
+      <ul id="tarefas"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por: Natália Frazão</p>
+    <p> Adaptado através do código em dart desenvolvido para um projeto com um propósito semelhante de  outra matéria  que se encontra na pasta (dart) do projeto</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
